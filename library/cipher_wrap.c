@@ -1501,6 +1501,12 @@ static void null_ctx_free( void *ctx )
     ((void) ctx);
 }
 
+static void null_set_iv( void *ctx, unsigned char *iv )
+{
+    ((void) ctx);
+    ((void) iv);
+}
+
 static const mbedtls_cipher_base_t null_base_info = {
     MBEDTLS_CIPHER_ID_NULL,
     NULL,
@@ -1519,7 +1525,8 @@ static const mbedtls_cipher_base_t null_base_info = {
     null_setkey,
     null_setkey,
     null_ctx_alloc,
-    null_ctx_free
+    null_ctx_free,
+    null_set_iv
 };
 
 static const mbedtls_cipher_info_t null_cipher_info = {

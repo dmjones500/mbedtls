@@ -2789,8 +2789,6 @@
 #include MBEDTLS_USER_CONFIG_FILE
 #endif
 
-#define USE_EXPERIMENTAL_NEWHOPE
-
 #include "check_config.h"
 
 #endif /* MBEDTLS_CONFIG_H */
