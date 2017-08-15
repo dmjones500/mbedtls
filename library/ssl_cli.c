@@ -2152,7 +2152,8 @@ static int ssl_write_encrypted_pms( mbedtls_ssl_context *ssl,
 #if defined(MBEDTLS_SSL_PROTO_TLS1_2)
 #if defined(MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED) ||                       \
     defined(MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED) ||                     \
-    defined(MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED)
+    defined(MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED) ||                   \
+    defined(MBEDTLS_KEY_EXCHANGE_NEWHOPE_ECDSA_ENABLED)
 static int ssl_parse_signature_algorithm( mbedtls_ssl_context *ssl,
                                           unsigned char **p,
                                           unsigned char *end,

@@ -59,7 +59,7 @@ set(src_crypto
     version.c
     version_features.c
     xtea.c
-    rlwe.c ../include/mbedtls/rlwe.h)
+    rlwe.c)
 
 set(src_x509
     certs.c
