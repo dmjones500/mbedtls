@@ -50,6 +50,7 @@ set(src_crypto
     platform.c
     ripemd160.c
     rsa.c
+    rlwe.c
     salsa20.c
     sha1.c
     sha256.c
@@ -58,8 +59,7 @@ set(src_crypto
     timing.c
     version.c
     version_features.c
-    xtea.c
-    rlwe.c)
+    xtea.c)
 
 set(src_x509
     certs.c
